@@ -61,8 +61,9 @@ function formatEvent (event) {
     : ''
   const buttonRSVP = `
     <a href="${encodeURI(event.browser_url)}" target="_blank">
-      <button type="button">Sign Me Up</button>
+      <button type="button">RSVP Here</button>
     </a>
+    <br>
   `
 
   return `
