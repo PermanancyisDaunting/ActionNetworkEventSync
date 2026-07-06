@@ -96,3 +96,18 @@ function cancelGoogleEvent (event, googleID) {
     return false
   }
 }
+
+function getGoogleEvent (event) {
+
+  if(event.getVisibility == "PRIVATE") {
+    return
+  }
+
+  return {
+    description: event.getDescription(),
+    endTime: event.getEndTime(),
+    startTime: event.getStartTime(),
+    location: event.getLocation(),
+    title: event.getTitle()
+  }
+}
