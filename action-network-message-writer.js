@@ -22,7 +22,7 @@ function draftANMessage (doc, apiKey) {
     return
   }
 
-  const subject = `🌹 ${emailSubject} for ${Utilities.formatDate(new Date(), 'UTC', 'yyyy-MM-dd')} 🫎`
+  const subject = `🌹 ${emailSubject} for ${Utilities.formatDate(new Date(), 'UTC', 'yyyy-MM-dd')} 🌹`
 
   const payload = {
     subject,
