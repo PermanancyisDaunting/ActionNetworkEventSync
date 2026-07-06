@@ -11,7 +11,7 @@ function getEndTime (event) {
   const endDate = new Date(event.end_date)
   const outputDate = new Date(endDate.toUTCString() + ' ' + dstOffset(endDate))
   if (isNaN(outputDate.getUTCFullYear())) {
-    return new Date(startDate.getTime() + 60 * 1000 * defultLengthMinutes)
+    return new Date(startDate.getTime() + 60 * 1000 * defaultLengthMinutes)
   }
   return outputDate
 }
