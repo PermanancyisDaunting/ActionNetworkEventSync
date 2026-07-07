@@ -22,7 +22,8 @@ function draftANMessage (doc, apiKey) {
     return
   }
 
-  const subject = `🌹 ${emailSubject} for ${Utilities.formatDate(new Date(), 'UTC', 'yyyy-MM-dd')} 🌹`
+  // TO-DO - automate selection of upcoming GM Month
+  const subject = `🌹 ${emailSubject} 🌹`
 
   const payload = {
     subject,
